@@ -1,0 +1,400 @@
+:root{
+  --primary: #F06B2D;
+  --accent:  #0D0B0C;
+  --secondary: #c3bdbd;
+  --muted:   #6d6262;
+  --bg:      #ffffff;
+  --text:    #0D0B0C;
+  --gap: 20px;
+  --font-main: "Ga Maamli", sans-serif;
+  --font-second: "Patrick Hand SC", cursive;
+  --btn-pd-size: 1rem 1rem;
+
+--nav-height: 64px;
+}
+
+.about-section,
+.services-section,
+.menu-container,
+.location,
+.pizza-section { /* pizza-section already has position:relative but harmless to repeat */
+  position: relative;
+}
+
+html, body {
+    overflow-x: hidden;
+    scroll-padding-top: var(--nav-height);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-second);
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+main > section {
+    scroll-margin-top: var(--nav-height);
+}
+
+.img-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Prevent images from increasing viewport width and improve transform rendering */
+.img-wrapper img {
+  position: absolute;
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  max-width: none;        /* allow positioning outside but not force layout width growth */
+  box-sizing: border-box;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-origin: center;
+}
+
+/* Initial scattered positions */
+.img-left {     
+    left: -16%;
+    top: 45%;
+    width: 11rem;
+    height: 18rem;
+}
+.img-right { 
+    right: -22%;
+    bottom: 16%;
+    width: 24rem;
+    height: 21rem;
+}
+.img-top-left {     
+    left: -2%;
+    top: -39%;
+    width: 13rem;
+    height: 25rem;
+}
+.img-top-right { 
+    right: -1%;
+    top: -39%;
+    width: 14rem;
+    height: 24rem;
+}
+.img-top-left-abt {     
+    left: -22%;
+    top: -1%;
+    width: 15rem;
+    height: 27rem;
+}
+.img-top-right-abt { 
+    right: -21%;
+    top: -1%;
+    width: 14rem;
+    height: 24rem;
+}
+.img-top-left-ser {     
+    left: -26%;
+    top: -9%;
+    width: 18rem;
+    height: 17rem;
+}
+.img-top-right-ser { 
+    right: -22%;
+    top: -1%;
+    width: 12rem;
+    height: 14rem;
+}
+
+/* When active, they move towards center and fade in */
+.active .img-left { transform: translateX(250px); opacity: 1; }
+.active .img-right { transform: translateX(-250px); opacity: 1; }
+.active .img-top-left { transform: translateY(250px); opacity: 1; }
+.active .img-top-right { transform: translateY(250px); opacity: 1; }
+.active .img-top-left-abt { transform: translateX(250px); opacity: 1; }
+.active .img-top-right-abt { transform: translateX(-250px); opacity: 1; }
+.active .img-top-left-ser { transform: translateX(250px); opacity: 1; }
+.active .img-top-right-ser { transform: translateX(-250px); opacity: 1; }
+
+
+.service.expanded {
+  flex: 3 !important; /* expands column */
+}
+
+.service.shrunk {
+  flex: 0 !important; /* shrinks others */
+}
+
+.service-info {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+.pizza-section {
+    position: relative; /* parent for absolute children */
+    padding-top: 130px;
+    background-image: url(/assets/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: var(--font-main);
+}
+.text-lg {
+    font-size: 2rem;
+}
+.text-highlighted {
+    color: var(--primary);
+}
+
+.landing-pg-button {
+    position: absolute;
+    bottom: 2rem;       /* stays inside */
+    z-index: 10;
+}
+.pizza-image-container {
+    margin-top: 70px ;
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.pizza-image {
+    width: 75%; 
+    object-fit: cover;
+    object-position: top;
+    margin: 20px auto;
+}
+
+.semi-circle {
+    width: 97%;
+    max-width: 930px;
+    height: 95%;
+    max-height: 450px;
+    border: 2px solid var(--accent);
+    border-bottom: none;
+    border-radius: 460px 460px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+    pointer-events: none;
+}
+
+.semi-circle-2 {
+    width: 85%;
+    max-width: 820px;
+    height: 85%;
+    max-height: 410px;
+
+    border: 1px solid var(--accent);
+    border-bottom: none;
+    border-radius: 450px 450px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 65px;
+    pointer-events: none;
+}
+
+.semi-circle-dots {
+    width: 78%;
+    position: absolute;
+    left: 50%;
+    bottom: 64%; /* Position it below the image */
+    transform: translateX(-50%);
+}
+
+.pizza-dot {
+    width: 15px;
+    height: 15px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+}
+
+.pizza-dot.active {
+    background-color: var(--primary);
+    transform: scale(1.2);
+    border: 2px solid var(--accent);
+    box-shadow: 1px 1px 20px var(--primary) ;
+}
+
+.dot-label-piz {
+    position: absolute;
+    font-weight: 600;
+    color: var(--text);
+    text-align: center;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+/* Dot positioning */
+.dot-piz--1 { bottom: 7px; left: 5%; }
+.dot-piz--2 { bottom: 95px; left: 21%; }
+.dot-piz--3 { bottom: 138px; left: 49%; }
+.dot-piz--4 { bottom: 95px; left: 78%; }
+.dot-piz--5 { bottom: 7px; left: 94%; }
+
+/* Label positioning */
+.label-1 { bottom: 20px; left: -2%; }
+.label-2 { bottom: 100px; left: 11%; }
+.label-3 { bottom: 154px; left: 50%; }
+.label-4 { bottom: 100px; left: 87%; }
+.label-5 { bottom: 20px; left: 100%; }
+
+
+
+.dot-container {
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+
+.location-dot {
+    width: 15px;
+    height: 15px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+}
+
+.location-dot.active {
+    background-color: var(--primary);
+    transform: scale(1.2);
+    border: 2px solid var(--accent);
+    box-shadow: 1px 1px 20px var(--primary);
+}
+
+.dot-label-loc {
+    position: absolute;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-weight: 600;
+    color: var(--text);
+    text-align: center;
+}
+
+.label-loc-1 {bottom: 60px; left: 1%;}
+.label-loc-2 {bottom: 60px; left: 34%;}
+.label-loc-3 {bottom: 60px; left: 67%;}
+.label-loc-4 {bottom: 60px; left: 100%;}
+
+
+.line {
+    position: absolute;
+    width: 110%;
+    height: 2px;
+    background-color: var(--secondary);
+    top: 50%;
+    left: -4%;
+    transform: translateY(-50%);
+}
+
+/* Dot positioning relative to line */
+.dot-loc--1 { left: 0%; }
+.dot-loc--2 { left: 33%; }
+.dot-loc--3 { left: 66%; }
+.dot-loc--4 { left: 99%; }
+
+/* Map container styles */
+#map {
+    width: 100%;
+    min-height: 400px;
+}
+
+.contact-box-container {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.menu-container {
+    background-image: url(/assets/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tab {
+    font-family: var(--font-second);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.tab:hover {
+    color: var(--primary);
+}
+
+.tab.active {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.item-card {
+    height: 33rem;
+    width: 12rem;
+    background-image: url(/assets/images/pizza-tray.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+}
+.item-card-img {
+    padding-top: 0.8rem;
+
+}
+.discount-tag {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: red;
+    border: 2px solid var(--accent);
+    color: var(--bg);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-info-box {
+    min-height: 12rem;
+    display: flex;
+    text-align: center;
+    background-color: #0d0b0ccb;
+    border-radius: 20px;
+    margin: 1.7rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-item-price {
+    color: #000000;
+    background-color: var(--primary);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+

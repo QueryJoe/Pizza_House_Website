@@ -1,0 +1,360 @@
+/* ==============================
+   Mobile (<576px)
+   ============================== */
+@media (max-width: 575.98px) {
+
+.img-wrapper {
+  display: none;
+}
+
+  .text-2xl{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .text-3xl{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .text-lg {
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.7rem;
+  }
+  
+  .some-img {
+    display: none;
+  }
+  .heading {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .pizza-image-container {
+    height: 16rem;
+    margin-top: 2rem;
+  }
+
+  .pizza-image {
+    width: 60%;
+    max-width: 330px;
+  }
+
+  .semi-circle {
+    width: 73%;
+    height: 91%;
+    left: 14%;
+  }
+
+  .semi-circle-2 {
+    width: 65%;
+    height: 83%;
+    left: 18%;
+  }
+
+  .semi-circle-dots {
+    bottom: 41%;
+    width: 81%;
+  }
+
+  .dot-label-loc,
+  .dot-label-piz {
+    font-size: 0.7rem;
+  }
+
+  .landing-pg-button {
+    bottom: 1rem;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.4rem;
+  }
+
+  /* Extra adjustments */
+
+  .about-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+  }
+
+  .loc-row-3 {
+    gap: 0;
+  }
+  .location {
+    padding: 2rem;
+  }
+
+  .menu-content{
+    padding: 3rem;
+  }
+  .item-card {
+    width: 10rem;
+    height: 28rem;
+  }
+  .item-card-img{
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .menu-info-box {
+    min-height: 9rem;
+    margin: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .discount-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
+/* ==============================
+   Small Tablets (576px–767.98px)
+   ============================== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  
+.img-left {     
+    left: -52%;
+    top: 22%;
+    width: 6rem;
+    height: 10rem;
+}
+.img-right { 
+    right: -63%;
+    bottom: 45%;
+    width: 15rem;
+    height: 12rem;
+}
+.img-top-left {     
+  display: none;
+}
+.img-top-right { 
+  display: none;
+}
+.img-top-left-abt {     
+left: -55%;
+  top: 65%;
+  width: 8rem;
+  height: 14rem;
+}
+.img-top-right-abt { 
+    right: -59%;
+  top: 69%;
+  width: 8rem;
+  height: 14rem;
+}
+.img-top-left-ser {     
+left: -59%;
+  top: -13%;
+  width: 11rem;
+  height: 12rem;
+}
+.img-top-right-ser { 
+  right: -56%;
+  top: -10%;
+  width: 8rem;
+  height: 10rem;
+}
+
+  .some-img {
+    display: none;
+  }
+  .semi-circle-dots {
+    bottom: 64%;
+    width: 87%;
+  }
+
+  .semi-circle {
+    left: 2%;
+  }
+
+  .semi-circle-2 {
+    left: 8%;
+  }
+
+  .loc-row-3 {
+    gap: 0;
+  }
+
+  /* Extra adjustments */
+
+
+  .menu-info-box {
+    margin: 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .discount-tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+  }
+}
+
+/* ==============================
+   Tablets (768px–991.98px)
+   ============================== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .text-2xl{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .text-3xl{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  .text-lg {
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.7rem;
+  }
+  .heading {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .landing-pg-button {
+    position: absolute;
+    bottom: 2rem;
+    z-index: 10;
+  } 
+
+  .pizza-image {
+    width: 80%;
+    max-width: 490px;
+  }
+  .pizza-image-container { height: 20rem; }
+
+  .semi-circle {
+    width: 73%;
+    height: 91%;
+    left: 14%;
+  }
+
+  .semi-circle-2 {
+    width: 65%;
+    height: 83%;
+    left: 18%;
+  }
+
+  .semi-circle-dots {
+    bottom: 53%;
+    width: 66%;
+  }
+
+  .location {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .loc-row-3{
+    gap: 0;
+  }
+
+  .contact-box-container {
+    width: 54%;
+  }
+
+  /* Extra adjustments */
+
+  .menu-container {
+    padding: 5rem; 
+  }
+  .item-card {
+    width: 12rem;
+    height: 33rem;
+  }
+  .item-card-img {
+    width: 12rem;
+    height: 12rem;
+  }
+  .menu-info-box {
+    min-height: 11rem;
+    margin: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .discount-tag {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 1124px) {
+
+  
+  .img-left {     
+    left: -25%;
+    top: 49%;
+    width: 8rem;
+    height: 14rem;
+  }
+  .img-right { 
+    right: -28%;
+    bottom: 18%;
+    width: 17rem;
+    height: 15rem;
+  }
+  .img-top-left {     
+    left: -3%;
+    top: -46%;
+    width: 9rem;
+    height: 18rem;
+  }
+  .img-top-right { 
+    right: -4%;
+    top: -44%;
+    width: 10rem;
+    height: 17rem;
+  }
+  .img-top-left-abt {     
+    left: -30%;
+    top: 3%;
+    width: 10rem;
+    height: 18rem;
+  }
+  .img-top-right-abt { 
+    right: -30%;
+    top: 3%;
+    width: 10rem;
+    height: 18rem;
+  }
+  .img-top-left-ser {     
+    left: -36%;
+    top: -9%;
+    width: 14rem;
+    height: 14rem;
+  }
+  .img-top-right-ser { 
+     right: -30%;
+    top: -1%;
+    width: 9rem;
+    height: 10rem;
+  }
+
+}
+
+@media (min-width: 1500px) {
+  .img-top-left-abt {     
+    left: -15%;
+    top: 3%;
+    width: 10rem;
+    height: 18rem;
+  }
+  .img-top-right-abt { 
+    right: -15%;
+    top: 3%;
+    width: 10rem;
+    height: 18rem;
+  }
+  .img-top-left-ser {     
+    left: -20%;
+    top: -9%;
+    width: 14rem;
+    height: 14rem;
+  }
+  .img-top-right-ser { 
+     right: -17%;
+    top: -1%;
+    width: 9rem;
+    height: 10rem;
+  }
+}

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneStop_Pizza</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+ 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/style/home.css">
+    <link rel="stylesheet" href="/assets/style/responsive.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+</head>
+<body>
+    <nav class="fixed top-0 w-full z-50 bg-[var(--bg)] shadow-md p-4">
+        <div class="container mx-auto flex items-center justify-between lg:px-[100px]">
+            <!-- Left: Logo -->
+            <div class="flex items-center">
+                <img href="#" class="logo tracking-widest w-16" src="assets/images/logo.png"></img>
+            </div>
+
+            <!-- Center: Navigation Links -->
+            <div class="hidden md:flex flex-grow justify-center space-x-8">
+                <a href="#contact-section" class="text-[var(--text)] transition-colors duration-300 hover:text-[var(--primary)] font-bold rounded-md py-2 px-4">CONTACT</a>
+                <a href="#about-section" class="text-[var(--text)] transition-colors duration-300 hover:text-[var(--primary)] font-bold rounded-md py-2 px-4">ABOUT</a>
+                <a href="#menu-section" class="text-[var(--text)] transition-colors duration-300 hover:text-[var(--primary)] font-bold rounded-md py-2 px-4">MENU</a>
+                <a href="#service-section" class="text-[var(--text)] transition-colors duration-300 hover:text-[var(--primary)] font-bold rounded-md py-2 px-4">SERVICES</a>
+                <a href="#terms-policy-section" class="text-[var(--text)] transition-colors duration-300 hover:text-[var(--primary)] font-bold rounded-md py-2 px-4">TERMS AND POLICY</a>
+            </div>
+
+            <!-- Right: Order Button -->
+            <div class="flex items-center">
+                <a href="#contact-section" class="bg-[var(--primary)] text-white font-bold py-3 px-6 rounded-full shadow-lg transfull shadowition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    Order
+                </a>
+            </div>
+        </div>
+    </nav>  
+
+    <main>
+        <section class="flex flex-col items-center justify-start pizza-section">
+             <div class="img-wrapper">
+                <img src="assets/images/stock-1.png" class="img-left">
+                <img src="assets/images/stock-2.png" class="img-right">
+                <img src="assets/images/stock-1.25.png" class="img-top-left">
+                <img src="assets/images/stock-1.50.png" class="img-top-right">
+            </div>  
+            <h1 class="text-5xl font-bold mb-6 text-[var(--accent)] text-center heading">
+                Welcome to Our 
+                <span class="text-highlighted">Pizza House</span> 
+            </h1>
+            <p class="text-3xl text-[var(--muted)] mb-10 text-center">
+                Freshly baked, handcrafted with love, and topped with the finest ingredients<br>  — 
+                because every slice should taste like joy.
+            </p>
+
+            <a href="#contact-section" class="landing-pg-button bg-[var(--accent)] text-white font-bold py-3 px-6 rounded-full shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                Order Now
+            </a>
+            
+            <div class="relative w-full max-w-[60rem] mx-auto">
+
+                <div class="pizza-image-container">
+                    <img id="pizza-img" src="assets/images/pepporoni.png"alt="Pizza" class="pizza-image">
+                </div>
+                <div class="semi-circle"></div>
+                <div class="semi-circle-2"></div>
+
+                <div class="semi-circle-dots">
+                    <!-- Dot 1 -->
+                    <div class="pizza-dot dot-piz--1 active" data-pizza="pepperoni"></div>
+                    <span class="dot-label-piz label-1">Pepperoni</span>
+
+
+                    <div class="pizza-dot dot-piz--2" data-pizza="margherita"></div>
+                    <span class="dot-label-piz label-2">Margherita</span>
+
+
+                    <div class="pizza-dot dot-piz--3" data-pizza="veggie"></div>
+                    <span class="dot-label-piz label-3">Veggie</span>
+
+
+                    <div class="pizza-dot dot-piz--4" data-pizza="chicken"></div>
+                    <span class="dot-label-piz label-4">Chicken</span>
+
+                    <div class="pizza-dot dot-piz--5" data-pizza="cheese"></div>
+                    <span class="dot-label-piz label-5">Cheese</span>
+                </div>
+            </div>
+        </section>
+        <section id="about-section" class="about-section mx-auto">
+            <div class="img-wrapper">
+                <img src="assets/images/stock-3.png" class="img-top-left-abt">
+                <img src="assets/images/stock-4.png" class="img-top-right-abt">
+            </div> 
+            <div class="about-content px-[10rem] py-[6rem] flex flex-col lg:flex-row items-center gap-12">
+
+                <!-- Left: Image Grid -->
+                <div class="grid grid-cols-3 grid-rows-3 gap-4 w-full lg:w-1/2">
+                <!-- Tall image -->
+                <div class="row-span-3 col-span-1">
+                    <img src="assets/images/loc-1.png" 
+                        class="w-full h-full object-cover rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105" 
+                        alt="Pizza 1">
+                </div>
+                <!-- Wide top image -->
+                <div class="col-span-2 row-span-1">
+                    <img src="assets/images/loc-2.png" 
+                        class="w-full h-48 object-cover rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105" 
+                        alt="Pizza 2">
+                </div>
+                <!-- Two smaller boxes -->
+                <div>
+                    <img src="assets/images/loc-3.png" 
+                        class="w-full h-40 object-cover rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105" 
+                        alt="Pizza 3">
+                </div>
+                <div>
+                    <img src="assets/images/loc-4.png" 
+                        class="w-full h-40 object-cover rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105" 
+                        alt="Pizza 4">
+                </div>
+                <!-- Wide bottom image -->
+                <div class="col-span-2 row-span-1">
+                    <img src="assets/images/make.jpg" 
+                        class="w-full h-48 object-cover rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105" 
+                        alt="Pizza 5">
+                </div>
+                </div>
+
+                <!-- Right: Text Content -->
+                <div class="w-full lg:w-1/2 text-center lg:text-left">
+                <h1 class="text-5xl font-bold text-[var(--accent)] mb-6">About Our <span class="text-highlighted">Pizza House</span></h1>
+                <p class="text-lg text-[var(--muted)] mb-6">
+                    From classic flavors to bold new combinations, we’ve been crafting pizzas that people love for years. 
+                    Our chefs use only fresh, locally sourced ingredients, and every pizza is baked to perfection in our stone ovens.
+                </p>
+                </div>
+
+            </div>
+        </section>
+        <section id="service-section" class="services-section mx-auto w-[100%]">
+            <div class="img-wrapper">
+                <img src="assets/images/stock-5.png" class="img-top-left-ser">
+                <img src="assets/images/stock-6.png" class="img-top-right-ser">
+            </div> 
+            <div>
+                <h1 class="text-5xl font-bold mb-6 text-[var(--accent)] text-center">Our <span class="text-highlighted"></span>services</h1>
+                <p class="my-4 text-lg text-[var(--muted)] text-center">Interested? Call us to learn more about current openings.</p>
+            </div>
+            <div id="services" class="flex w-full h-[200px] overflow-hidden shadow-md">
+                <!-- Service 1 -->
+                <div class="service text-[var(--primary)] flex-1 border border-[var(--accent)] bg-[var(--accent)] flex flex-col items-center justify-center cursor-pointer transition-all duration-500 ease-in-out overflow-hidden" data-side="right">
+                <h3 class="text-lg font-bold">CATERING</h3>
+                <ul class="service-info list-disc list-inside space-y-2 hidden">
+                    <li>Perfect for birthdays, office parties, family gatherings, or celebrations.</li>
+                    <li>Customizable pizza menus tailored for your event.</li>
+                    <li>Large orders delivered hot and on time.</li>
+                    <li>Friendly staff assistance for smooth catering.</li>
+                </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service text-white flex-1  border border-[var(--accent)] bg-[var(--primary)] flex flex-col items-center justify-center cursor-pointer transition-all duration-500 ease-in-out overflow-hidden" data-side="both">
+                    <h3 class="text-lg font-bold">HOME DELIVERY</h3>
+                    <ul class="service-info list-disc list-inside space-y-2 hidden">
+                        <li>Freshly baked pizzas delivered straight to your doorstep.</li>
+                        <li>Wide range of pizzas, sides, and drinks available.</li>
+                        <li>Quick delivery within 30–45 minutes.</li>
+                        <li>Place your order directly by phone call—no waiting on apps!</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service text-[var(--accent)] flex-1 border border-[var(--accent)] bg-[var(--secondary)] flex flex-col items-center justify-center cursor-pointer transition-all duration-500 ease-in-out overflow-hidden" data-side="left">
+                <h3 class="text-lg font-bold">HIRING</h3>
+                <ul class="service-info list-disc list-inside space-y-2 hidden">
+                    <li>Join our fun and passionate pizza-loving team.</li>
+                    <li>Flexible shifts and supportive environment.</li>
+                    <li>Openings in kitchen, delivery, and customer support.</li>
+                    <li>Training provided—no prior experience needed.</li>
+                </ul>
+                </div>
+            </div>
+        </section>  
+
+
+        <section id="contact-section" class="location px-[10rem] mt-16 mx-auto">
+
+            <div class="text-center mb-16">
+                <h1 class="text-5xl font-bold font-[var(--font-main)] text-[var(--accent)] welcome-heading mb-4">
+                    Place a <span class="text-highlighted">Home Delivery</span>
+                </h1>
+                <p class="text-lg text-[var(--muted)] max-w-2xl mx-auto">
+                    Discover the nearest Pizza House to you and get a piping hot pizza delivered right to your door. We're here to serve you with fresh, delicious pizzas made with the finest ingredients.
+                </p>
+            </div>
+
+            <!-- Row 2: Location Dots -->
+            <div class="flex justify-center mb-5">
+                <div class="dot-container max-w-4xl mx-auto flex items-center justify-between">
+                    <div class="line"></div>
+                    <div class="location-dot dot-loc--1 active" data-location="downtown"></div>
+                    <span class="dot-label-loc label-loc-1">Downtown</span>
+
+                    <div class="location-dot dot-loc--2" data-location="uptown"></div>
+                    <span class="dot-label-loc label-loc-2">Uptown</span>
+
+                    <div class="location-dot dot-loc--3" data-location="riverside"></div>
+                    <span class="dot-label-loc label-loc-3">Riverside</span>
+
+                    <div class="location-dot dot-loc--4" data-location="suburbs"></div>
+                    <span class="dot-label-loc label-loc-4">Suburbs</span>
+                </div>
+            </div>
+            
+            <!-- Row 3: Contact Info and Map -->
+            <div class="loc-row-3 flex flex-col md:flex-row gap-12 items-center md:items-start w-full max-w-6xl mx-auto">
+
+                <!-- Map/Image (on top for mobile, right for desktop) -->
+                <div class="w-full md:w-3/5 order-1 md:order-2">
+                    <div class="bg-[var(--bg)] p-4 rounded-xl shadow-lg border border-[var(--secondary)] flex items-center justify-center overflow-hidden">
+                        <img id="map-image" src="assets/images/loc-1.png" alt="Map Location" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <div class="some-img flex items-center justify-center mt-4">
+                        <img src="assets/images/rider.png" alt="Placeholder illustration" class="w-[25rem] h-auto">
+                    </div>
+                </div>
+
+                <!-- Contact Info (below map on mobile, left side on desktop) -->
+                <div class="w-full md:w-2/5 order-2 md:order-1 contact-box-container border border-[var(--secondary)]">
+                    <!-- Top box: Open Hours -->
+                    <div class="bg-[var(--bg)] p-8">
+                        <h2 class="text-3xl font-bold text-[var(--primary)] mb-4">Contact Details</h2>
+                        <div class="mb-6">
+                            <h3 class="font-bold text-xl text-[var(--accent)] mb-2">Open Hours</h3>
+                            <p class="text-[var(--text)]">Monday - Sunday: 11:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+
+                    <!-- Bottom box: Dynamic Contact Info -->
+                    <div id="contact-details-box" class="bg-[var(--primary)] p-8 text-white">
+                        <div id="address-info" class="mb-6">
+                            <h3 class="font-bold text-xl mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Addresses</h3>
+                            <p>Downtown: 123 Pizza St, Suite 100, Cityville, USA</p>
+                        </div>
+                        <div id="email-info" class="mb-6">
+                            <h3 class="font-bold text-xl mb-2"><i class="fas fa-envelope mr-2"></i>Email</h3>
+                            <p>info@pizzahouse.com</p>
+                        </div>
+                        <div id="phone-info">
+                            <h3 class="font-bold text-xl mb-2"><i class="fas fa-phone mr-2"></i>Phone Numbers</h3>
+                            <ul>
+                                <li>(555) 123-4567</li>
+                                <li>(555) 987-6543</li>
+                                <li>(555) 555-0000</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section id="menu-section" class="menu-container mx-auto ">
+            <div class="img-wrapper">
+                <img src="assets/images/stock-3.png" class="img-top-left-abt">
+                <img src="assets/images/stock-4.png" class="img-top-right-abt">
+            </div> 
+            <div class="menu-content p-[6rem]">
+    <!-- Section 1: Heading and Sub-text -->
+                <div class="text-center mb-20">
+                    <h1 class="text-5xl font-bold text-[var(--accent)] heading mb-4">
+                        Our Menu
+                    </h1>
+                    <p class="text-lg text-[var(--muted)]] max-w-2xl mx-auto">
+                        Explore a wide variety of delicious pizzas, fresh salads, and other favorites. Everything is made with the highest quality ingredients for a taste you'll love.
+                    </p>
+                </div>
+
+                <!-- Section 2: Menu Tabs -->
+                <div class="flex flex-wrap justify-center gap-6 mb-16">
+                    <div class="tab active" data-tab="gourmet-pizza"><i class="fas fa-pizza-slice mr-2"></i>Gourmet Pizza</div>
+                    <div class="tab" data-tab="salads"><i class="fas fa-leaf mr-2"></i>Salads</div>
+                    <div class="tab" data-tab="make-your-own"><i class="fas fa-wrench mr-2"></i>Make Your Own</div>
+                    <div class="tab" data-tab="pastas-and-subs"><i class="fas fa-utensils mr-2"></i>Pastas & Subs</div>
+                    <div class="tab" data-tab="drinks"><i class="fas fa-glass-cheers mr-2"></i>Drinks</div>
+                </div>
+
+                <!-- Separator Line -->
+                <hr class="my-12 border-t-2 border-[var(--secondary)]">
+
+                <!-- Section 3: Menu Items -->
+                <div id="menu-items-container" class="flex flex-wrap justify-center gap-8 w-fit mx-auto">
+                    <!-- Menu items will be dynamically generated here -->
+                </div>
+                <div class="flex justify-center mt-16">
+                    <a href="#contact-section" class="bg-[var(--primary)] text-[var(--bg)] font-bold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                        Order Now
+                    </a>
+                </div>               
+            </div>
+            
+
+        </section> 
+        <section id="terms-policy-section" class="terms-policy-section px-[8%] py-[5rem]">
+            <div class="max-w-6xl mx-auto">
+
+                <!-- Heading -->
+                <h1 class="text-4xl font-extrabold text-center text-[var(--accent)] mb-8"><span class="text-highlighted">Terms</span>& Policies</h1>
+                <p class="text-lg text-[var(--muted)] text-center max-w-3xl mx-auto mb-12">
+                At PizzaJoy, we’re committed to serving you hot, delicious pizzas right to your doorstep.  
+                Please read our policies carefully before placing your order by phone.
+                </p>
+
+                <!-- Terms Cards -->
+                <div class="grid md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                    <div class="bg-white border border-[var(--accent)] rounded-2xl p-6 hover:scale-105 transition duration-300">
+                        <h3 class="text-xl font-bold text-[var(--primary)]mb-3">📍 Selecting Your Branch</h3>
+                        <p class="text-[var(--muted)]">
+                        We operate four branches across the city. Please select the branch nearest to your location before placing an order. This ensures quick and reliable delivery.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white border border-[var(--accent)] rounded-2xl p-6 hover:scale-105 transition duration-300">
+                        <h2 class="text-xl font-bold text-[var(--primary)]mb-3">📞 Phone Orders Only</h2>
+                        <p class="text-[var(--muted)]">
+                        Orders are accepted exclusively through phone calls. Once you’ve browsed the menu online or in-store, simply call your chosen branch to place your order.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white border border-[var(--accent)] rounded-2xl p-6 hover:scale-105 transition duration-300">
+                        <h2 class="text-xl font-bold text-[var(--primary)]mb-3">🚚 Delivery Policy</h2>
+                        <p class="text-[var(--muted)]">
+                        Deliveries are available within a 5km radius of each branch. Delivery times may vary depending on traffic, weather, and order size.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white border border-[var(--accent)] rounded-2xl p-6 hover:scale-105 transition duration-300">
+                        <h2 class="text-xl font-bold text-[var(--primary)]mb-3">💳 Payments</h2>
+                        <p class="text-[var(--muted)]">
+                        Currently, we accept cash on delivery only. Please prepare the exact change if possible to make the process faster.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+               <div class="mt-20">
+                <div class="mt-20">
+                <h1 class="text-3xl font-bold text-center text-[var(--primary)] mb-10">Fan Q/A 🍴</h1>
+
+                <div class="space-y-6 max-w-3xl mx-auto">
+                    <!-- Q1 -->
+                    <div class="faq-item bg-white border border-[var(--accent)] rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
+                        <button class="faq-question w-full bg-white text-black text-left p-6 font-semibold flex justify-between items-center">
+                            ❓ How do I know which branch to call?
+                            <span class="toggle-icon text-xl">+</span>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-[var(--primary)] text-white px-6">
+                            <p class="py-4">
+                            Simply check our <a class="font-bold underline" href="#">Branch Locator</a> page to find the branch closest to your delivery address.
+                            </p>
+                        </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="faq-item bg-white border border-[var(--accent)] rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
+                        <button class="faq-question w-full bg-white text-black text-left p-6 font-semibold flex justify-between items-center">
+                            ❓ Can I place my order online?
+                            <span class="toggle-icon text-xl">+</span>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-[var(--primary)] text-white px-6">
+                            <p class="py-4">
+                            Not yet! We currently accept <span class="font-bold">phone orders only</span>. Our team loves talking to our fans directly!
+                            </p>
+                        </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="faq-item bg-white border border-[var(--accent)] rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
+                        <button class="faq-question w-full bg-white text-black text-left p-6 font-semibold flex justify-between items-center">
+                            ❓ What’s the average delivery time?
+                            <span class="toggle-icon text-xl">+</span>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-[var(--primary)] text-white px-6">
+                            <p class="py-4">
+                            Typically, deliveries take <span class="font-bold">30–45 minutes</span>, depending on distance and traffic.
+                            </p>
+                        </div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="faq-item bg-white border border-[var(--accent)] rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
+                        <button class="faq-question w-full bg-white text-black text-left p-6 font-semibold flex justify-between items-center">
+                            ❓ Do you offer vegetarian or vegan options?
+                            <span class="toggle-icon text-xl">+</span>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-[var(--primary)] text-white px-6">
+                            <p class="py-4">
+                            Absolutely! Our menu includes a wide selection of <span class="font-bold">vegetarian pizzas</span>, and we also offer vegan cheese upon request.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+        <footer class="bg-[var(--accent)] text-[var(--bg)] px-[7rem] py-8">
+            <div class="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-12 text-center md:text-left">
+                <!-- Logo and About Section -->
+                <div class="flex-1">
+                    <img src="assets/images/logo.png" alt="Pizza House Logo" class="mx-auto md:mx-0 mb-4 w-[10rem]">
+                    <p class="text-[var(--muted)] text-sm max-w-sm mx-auto md:mx-0">Serving the best pizza in town since 2023. Our passion is crafting delicious food with the finest ingredients.</p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="flex-1 mt-8 md:mt-0">
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-[var(--muted)]">
+                        <li><i class="fas fa-map-marker-alt text-[var(--primary)] mr-2"></i>123 Pizza Lane, Anytown, State</li>
+                        <li><i class="fas fa-phone-alt text-[var(--primary)] mr-2"></i>(123) 456-7890</li>
+                        <li><i class="fas fa-envelope text-[var(--primary)] mr-2"></i>info@pizzahouse.com</li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="flex-1 mt-8 md:mt-0 text-center md:text-right">
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex justify-center md:justify-end space-x-6 text-2xl">
+                        <a href="#" class="hover:text-[var(--primary)] transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-[var(--primary)] transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8 text-sm text-[var(--muted)]">
+                &copy; 2024 Pizza House. All rights reserved.
+            </div>
+        </footer>  
+
+
+
+    <script src="/assets/js/home.js"></script>
+</body>
+</html>
