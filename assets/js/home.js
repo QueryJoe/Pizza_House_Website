@@ -14,19 +14,19 @@ const sections = document.querySelectorAll("section");
 
  const locationData = {
     'downtown': {
-        map: '/assets/images/loc-1.png',
+        map: '/../images/loc-1.png',
         address: 'Downtown: 123 Pizza St, Suite 100, Cityville, USA',
     },
     'uptown': {
-        map: '/assets/images/loc-2.png',
+        map: '/../images/loc-2.png',
         address: 'Uptown: 456 Crust Ave, Apt 2B, Townsville, USA',
     },
     'riverside': {
-        map: '/assets/images/loc-3.png',
+        map: '/../images/loc-3.png',
         address: 'Riverside: 789 River Rd, Building C, Villageton, USA',
     },
     'suburbs': {
-        map: '/assets/images/loc-4.png',
+        map: '/../images/loc-4.png',
         address: 'Suburbs: 101 Dough Ln, Unit 5, Hamlet, USA',
     }
 };
@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const pizzaDots = document.querySelectorAll('.pizza-dot');
 
     const pizzaImages = {
-        'pepperoni': '/assets/images/pepporoni.png',
-        'margherita': '/assets/images/margherita.png',
-        'veggie': '/assets/images/veggie.png',
-        'chicken': '/assets/images/chicken.png',
-        'cheese': '/assets/images/cheese.png'
+        'pepperoni': '/../images/pepporoni.png',
+        'margherita': '/../images/margherita.png',
+        'veggie': '/../images/veggie.png',
+        'chicken': '/../images/chicken.png',
+        'cheese': '/../images/cheese.png'
     };
 
     const pizzaKeys = Object.keys(pizzaImages);
@@ -127,25 +127,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const menuData = {
     'gourmet-pizza': [
-        { name: 'Margherita Pizza', description: 'Classic pizza with fresh mozzarella, basil, and tomato sauce.', price: '$15.99', image: 'assets/images/margherita.png', discount: '10%' },
-        { name: 'Pepperoni Perfection', description: 'A timeless favorite with generous amounts of pepperoni.', price: '$17.99', image: 'assets/images/pepporoni.png', discount: null },
-        { name: 'Veggie Supreme', description: 'Loaded with bell peppers, onions, mushrooms, and black olives.', price: '$16.50', image: 'assets/images/veggie.png', discount: null },
-        { name: 'BBQ Chicken', description: 'Grilled chicken, red onions, and tangy BBQ sauce.', price: '$18.99', image: 'assets/images/chicken.png', discount: '15%' },
+        { name: 'Margherita Pizza', description: 'Classic pizza with fresh mozzarella, basil, and tomato sauce.', price: '$15.99', image: '../images/margherita.png', discount: '10%' },
+        { name: 'Pepperoni Perfection', description: 'A timeless favorite with generous amounts of pepperoni.', price: '$17.99', image: '../images/pepporoni.png', discount: null },
+        { name: 'Veggie Supreme', description: 'Loaded with bell peppers, onions, mushrooms, and black olives.', price: '$16.50', image: '../images/veggie.png', discount: null },
+        { name: 'BBQ Chicken', description: 'Grilled chicken, red onions, and tangy BBQ sauce.', price: '$18.99', image: '../images/chicken.png', discount: '15%' },
     ],
     'salads': [
-        { name: 'Caesar Salad', description: 'Crisp romaine lettuce with croutons, parmesan, and Caesar dressing.', price: '$9.50', image: 'assets/images/caser.png', discount: null },
-        { name: 'Greek Salad', description: 'Fresh veggies, olives, and feta cheese with vinaigrette.', price: '$10.99', image: 'assets/images/green.png', discount: '10%' },
-        { name: 'Garden Salad', description: 'A simple salad with tomatoes, cucumbers, and bell peppers.', price: '$8.50', image: 'assets/images/garden.png', discount: null },
+        { name: 'Caesar Salad', description: 'Crisp romaine lettuce with croutons, parmesan, and Caesar dressing.', price: '$9.50', image: '../images/caser.png', discount: null },
+        { name: 'Greek Salad', description: 'Fresh veggies, olives, and feta cheese with vinaigrette.', price: '$10.99', image: '../images/green.png', discount: '10%' },
+        { name: 'Garden Salad', description: 'A simple salad with tomatoes, cucumbers, and bell peppers.', price: '$8.50', image: '../images/garden.png', discount: null },
     ],
     'make-your-own': [
-        { name: 'Build Your Pizza', description: 'Choose your crust, sauce, cheese, and toppings.', price: 'Starts at $12.00', image: 'assets/images/make.png', discount: null },
+        { name: 'Build Your Pizza', description: 'Choose your crust, sauce, cheese, and toppings.', price: 'Starts at $12.00', image: '../images/make.png', discount: null },
     ],
     'pastas-and-subs': [
-        { name: 'Spaghetti & Meatballs', description: 'Classic spaghetti with rich marinara and savory meatballs.', price: '$14.99', image: 'assets/images/spaghetti.png', discount: null },
+        { name: 'Spaghetti & Meatballs', description: 'Classic spaghetti with rich marinara and savory meatballs.', price: '$14.99', image: '../images/spaghetti.png', discount: null },
     ],
     'drinks': [
-        { name: 'Iced Tea', description: 'Freshly brewed sweet or unsweetened iced tea.', price: '$2.99', image: 'assets/images/iced-tea.png', discount: null },
-        { name: 'Lemonade', description: 'A freshly squeezed, tangy lemonade.', price: '$3.50', image: 'assets/images/lemonade.png', discount: '10%' },
+        { name: 'Iced Tea', description: 'Freshly brewed sweet or unsweetened iced tea.', price: '$2.99', image: '../images/iced-tea.png', discount: null },
+        { name: 'Lemonade', description: 'A freshly squeezed, tangy lemonade.', price: '$3.50', image: '../images/lemonade.png', discount: '10%' },
     ],
 };
 
