@@ -14,19 +14,19 @@ const sections = document.querySelectorAll("section");
 
  const locationData = {
     'downtown': {
-        map: '/../images/loc-1.png',
+        map: '../images/loc-1.png',
         address: 'Downtown: 123 Pizza St, Suite 100, Cityville, USA',
     },
     'uptown': {
-        map: '/../images/loc-2.png',
+        map: '../images/loc-2.png',
         address: 'Uptown: 456 Crust Ave, Apt 2B, Townsville, USA',
     },
     'riverside': {
-        map: '/../images/loc-3.png',
+        map: '../images/loc-3.png',
         address: 'Riverside: 789 River Rd, Building C, Villageton, USA',
     },
     'suburbs': {
-        map: '/../images/loc-4.png',
+        map: '../images/loc-4.png',
         address: 'Suburbs: 101 Dough Ln, Unit 5, Hamlet, USA',
     }
 };
@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const pizzaDots = document.querySelectorAll('.pizza-dot');
 
     const pizzaImages = {
-        'pepperoni': '/../images/pepporoni.png',
-        'margherita': '/../images/margherita.png',
-        'veggie': '/../images/veggie.png',
-        'chicken': '/../images/chicken.png',
-        'cheese': '/../images/cheese.png'
+        'pepperoni': '../images/pepporoni.png',
+        'margherita': '../images/margherita.png',
+        'veggie': '../images/veggie.png',
+        'chicken': '../images/chicken.png',
+        'cheese': '../images/cheese.png'
     };
 
     const pizzaKeys = Object.keys(pizzaImages);
