@@ -119,6 +119,11 @@ main > section {
 .active .img-top-left-ser { transform: translateX(250px); opacity: 1; }
 .active .img-top-right-ser { transform: translateX(-250px); opacity: 1; }
 
+.service-content {
+    width: 70%;
+    gap: 4rem;
+    height: 5rem;
+}
 /* Positioning the image at the bottom left */
 .service-image-wrapper {
   position: absolute;
@@ -283,6 +288,9 @@ h1 {
     width: 100%;
 }
 
+.about-content {
+    padding: 6rem 10rem;
+}
 
 .location-dot {
     width: 15px;
