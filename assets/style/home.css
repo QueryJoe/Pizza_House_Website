@@ -140,6 +140,13 @@ main > section {
   flex: 0 !important; /* shrinks others */
 }
 
+.shrunk .service-image-wrapper,
+.shrunk .service-heading {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
 .service-info {
   animation: fadeIn 0.5s ease forwards;
 }

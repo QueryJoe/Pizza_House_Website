@@ -227,17 +227,26 @@ services.forEach(service => {
     services.forEach(s => {
       s.classList.remove("expanded", "shrunk");
       s.querySelector(".service-info").style.display = "none";
+      // Ensure heading and image are visible on reset
+      s.querySelector(".service-heading").style.opacity = 1;
+      s.querySelector(".service-image-wrapper").style.opacity = 1;
     });
 
     // If not already expanded, expand the clicked service
     if (!alreadyExpanded) {
       service.classList.add("expanded");
       service.querySelector(".service-info").style.display = "block";
+      
+      // Hide the heading and image of the expanded box
+      service.querySelector(".service-heading").style.opacity = 0;
+      service.querySelector(".service-image-wrapper").style.opacity = 0;
 
-      // Shrink other services
+      // Shrink and hide the other boxes' content
       services.forEach(s => {
         if (s !== service) {
           s.classList.add("shrunk");
+          s.querySelector(".service-heading").style.opacity = 0;
+          s.querySelector(".service-image-wrapper").style.opacity = 0;
         }
       });
     }
