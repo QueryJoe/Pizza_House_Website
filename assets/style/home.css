@@ -119,7 +119,19 @@ main > section {
 .active .img-top-left-ser { transform: translateX(250px); opacity: 1; }
 .active .img-top-right-ser { transform: translateX(-250px); opacity: 1; }
 
+/* Positioning the image at the bottom left */
+.service-image-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 1; /* Start with full opacity */
+  transition: opacity 0.5s ease-in-out; /* Add transition for fade effect */
+}
 
+/* Hide the image on hover or when expanded */
+.service.expanded .service-image-wrapper {
+  opacity: 0;
+}
 .service.expanded {
   flex: 3 !important; /* expands column */
 }

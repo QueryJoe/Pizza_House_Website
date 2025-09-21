@@ -223,22 +223,23 @@ services.forEach(service => {
   service.addEventListener("click", () => {
     const alreadyExpanded = service.classList.contains("expanded");
 
-    // Reset all
+    // Reset all services
     services.forEach(s => {
       s.classList.remove("expanded", "shrunk");
       s.querySelector(".service-info").style.display = "none";
     });
 
-    // If not already expanded, expand clicked
+    // If not already expanded, expand the clicked service
     if (!alreadyExpanded) {
       service.classList.add("expanded");
       service.querySelector(".service-info").style.display = "block";
 
-      // Shrink others
+      // Shrink other services
       services.forEach(s => {
-        if (s !== service) s.classList.add("shrunk");
+        if (s !== service) {
+          s.classList.add("shrunk");
+        }
       });
     }
   });
 });
-
