@@ -1,112 +1,115 @@
 /* ==============================
    Mobile (<576px)
    ============================== */
-@media (max-width: 575.98px) {
+@media (max-width: 576px){
 
 .img-wrapper {
   display: none;
 }
 
-  .text-2xl{
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-  }
-  .text-3xl{
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-  .text-lg {
-    font-size: 1rem;
-  }
-  p{
-    font-size: 0.7rem;
-  }
-  
-  .some-img {
-    display: none;
-  }
-  .heading {
-    font-size: 2.8rem;
-    margin-bottom: 1rem;
-  }
-
-  .pizza-image-container {
-    height: 16rem;
-    margin-top: 2rem;
-  }
-
-  .pizza-image {
-    width: 60%;
-    max-width: 330px;
-  }
-
-  .semi-circle {
-    width: 73%;
-    height: 91%;
-    left: 14%;
-  }
-
-  .semi-circle-2 {
-    width: 65%;
-    height: 83%;
-    left: 18%;
-  }
-
-  .semi-circle-dots {
-    bottom: 41%;
-    width: 81%;
-  }
-
-  .dot-label-loc,
-  .dot-label-piz {
-    font-size: 0.7rem;
-  }
-
-  .landing-pg-button {
-    bottom: 1rem;
-    font-size: 0.9rem;
-    padding: 0.6rem 1.4rem;
-  }
-
-  /* Extra adjustments */
-
-  .about-content {
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-  }
-
-  .loc-row-3 {
-    gap: 0;
-  }
-  .location {
-    padding: 2rem;
-  }
-
-  .menu-content{
-    padding: 3rem;
-  }
-  .item-card {
-    width: 10rem;
-    height: 28rem;
-  }
-  .item-card-img{
-    width: 11rem;
-    height: 11rem;
-  }
-
-  .menu-info-box {
-    min-height: 9rem;
-    margin: 1rem;
-    font-size: 0.85rem;
-  }
-
-  .discount-tag {
-    font-size: 0.7rem;
-    padding: 0.2rem 0.5rem;
-  }
+.text-2xl{
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+.text-3xl{
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.text-lg {
+  font-size: 1rem;
+}
+p{
+  font-size: 0.7rem;
 }
 
+.some-img {
+  display: none;
+}
+.heading {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.pizza-image-container {
+  height: 16rem;
+  margin-top: 2rem;
+}
+
+.pizza-image {
+  width: 60%;
+  max-width: 330px;
+}
+
+.semi-circle {
+  width: 73%;
+  height: 91%;
+  left: 14%;
+}
+
+.semi-circle-2 {
+  width: 65%;
+  height: 83%;
+  left: 18%;
+}
+
+.semi-circle-dots {
+  bottom: 41%;
+  width: 81%;
+}
+
+.dot-label-loc,
+.dot-label-piz {
+  font-size: 0.7rem;
+}
+
+.landing-pg-button {
+  bottom: 1rem;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.4rem;
+}
+
+/* Extra adjustments */
+
+.about-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+}
+.service-content {
+  width: 95%;
+  gap: 0.5rem;
+  height: 12rem;
+}
+.loc-row-3 {
+  gap: 0;
+}
+.location {
+  padding: 2rem;
+}
+
+.menu-content{
+  padding: 3rem;
+}
+.item-card {
+  width: 10rem;
+  height: 28rem;
+}
+.item-card-img{
+  width: 11rem;
+  height: 11rem;
+}
+
+.menu-info-box {
+  min-height: 9rem;
+  margin: 1rem;
+  font-size: 0.85rem;
+}
+
+.discount-tag {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+}
+}
 /* ==============================
    Small Tablets (576px–767.98px)
    ============================== */
@@ -249,6 +252,12 @@ left: -59%;
     width: 66%;
   }
 
+  .service-content {
+    width: 81%;
+    gap: 1rem;
+    height: 14rem;
+}
+
   .location {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -284,9 +293,7 @@ left: -59%;
     font-size: 0.8rem;
   }
 }
-@media (max-width: 1124px) {
-
-  
+@media (min-width:991.98px) and (max-width: 1124px) {
   .img-left {     
     left: -25%;
     top: 49%;
@@ -336,9 +343,15 @@ left: -59%;
     height: 10rem;
   }
 
+ .service-content {
+    width: 84%;
+    gap: 2rem;
+    height: 19rem;
 }
 
-@media (min-width: 1500px) {
+}
+
+@media (min-width: 1124px){
   .img-top-left-abt {     
     left: -15%;
     top: 3%;
@@ -363,4 +376,5 @@ left: -59%;
     width: 9rem;
     height: 10rem;
   }
+
 }

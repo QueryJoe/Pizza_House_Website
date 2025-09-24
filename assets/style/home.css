@@ -122,7 +122,7 @@ main > section {
 .service-content {
     width: 70%;
     gap: 4rem;
-    height: 5rem;
+    height: 19rem;
 }
 /* Positioning the image at the bottom left */
 .service-image-wrapper {
@@ -136,7 +136,7 @@ main > section {
 /* Hide the image on hover or when expanded */
 .service.expanded .service-image-wrapper {
   opacity: 0;
-}
+}z
 .service.expanded {
   flex: 3 !important; /* expands column */
 }
@@ -290,6 +290,10 @@ h1 {
 
 .about-content {
     padding: 6rem 10rem;
+}
+
+.location {
+    padding: 0rem 10rem;
 }
 
 .location-dot {
